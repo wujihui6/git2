@@ -5,7 +5,7 @@ headline = []
 
 def load_info():
     """从文件导入学生信息"""
-    fr = open("student.txt", 'r')
+    fr = open("student.txt", 'r', encoding="UTF-8")
     head = fr.readline()
     headline.append(head)  # 为后面写入表头做准备
     fr.seek(0, 0)
